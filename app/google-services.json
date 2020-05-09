@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "761933813556",
+    "firebase_url": "https://tiktalk-chat.firebaseio.com",
+    "project_id": "tiktalk-chat",
+    "storage_bucket": "tiktalk-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761933813556:android:7c7b25652ccb1638287761",
+        "android_client_info": {
+          "package_name": "com.example.tiktalkchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761933813556-jakqasjrbvlf9suo3fndgk5emht0kj8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tiktalkchat",
+            "certificate_hash": "01c2290dff7730d8b7866b0d7a00946da51508d9"
+          }
+        },
+        {
+          "client_id": "761933813556-dq8shm9phuskjccd1fodt5qs1gkhpbcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5R492J8te2wxmM_Bdbr_SXpoZPL7MNeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761933813556-dq8shm9phuskjccd1fodt5qs1gkhpbcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
