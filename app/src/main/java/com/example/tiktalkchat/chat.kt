@@ -69,6 +69,8 @@ class chat : AppCompatActivity() {
                                             baatein.add(p0.value.toString()+"    :   "+p0.key.toString())
                                             adapter.notifyDataSetChanged()
                                         }
+
+                                        chatList.smoothScrollToPosition(adapter.getCount() -1);
                                     }
 
                                     override fun onChildRemoved(p0: DataSnapshot) {}
@@ -127,10 +129,10 @@ class chat : AppCompatActivity() {
             override fun onChildMoved(p0: DataSnapshot, p1: String?) {}
             override fun onChildChanged(p0: DataSnapshot, p1: String?) {}
             override fun onChildAdded(p0: DataSnapshot, p1: String?) {
-                if(p0.key.equals(hash(str + ":" + firebaseAuth.currentUser?.email.toString()))!! || p0.key?.equals(hash(firebaseAuth.currentUser?.email.toString() + ":" + str))!!){
+                if(p0.key.equals(hash(str + ":" + firebaseAuth.currentUser?.email.toString()))!! || p0.key?.equals(hash(firebaseAuth.currentUser?.email.toString() + ":" + str))!!&&!msg.equals("")){
 
                     databaseReference.child(p0.key.toString()).push().child(msg).setValue(firebaseAuth.currentUser?.email.toString())
-
+                    editText.setText("")
                 }
             }
 
